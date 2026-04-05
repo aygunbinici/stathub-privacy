@@ -26,7 +26,7 @@
     <div class="lang-switch"><a href="#english">English</a></div>
 
     <h1>StatHub — Gizlilik Politikası</h1>
-    <p class="subtitle">Son güncelleme: 4 Nisan 2026</p>
+    <p class="subtitle">Son güncelleme: 6 Nisan 2026</p>
 
     <p>StatHub, futbol takımlarını ve oyuncularını yönetmek için tasarlanmış bir mobil uygulamadır. Bu gizlilik politikası, uygulamayı kullanırken hangi verilerinizin toplandığını ve nasıl kullanıldığını açıklar.</p>
 
@@ -41,7 +41,10 @@
     <h3>c) Fotoğraflar</h3>
     <p>Takım armaları ve oyuncu fotoğrafları Cloudflare R2 bulut depolama hizmetinde saklanır. Fotoğraflar yalnızca uygulama içinde görüntülenir.</p>
 
-    <h3>d) Analitik ve Hata Raporları</h3>
+    <h3>d) Push Bildirimleri</h3>
+    <p>Uygulama, Firebase Cloud Messaging (FCM) aracılığıyla push bildirimleri gönderebilir. Bu amaçla cihazınıza özgü bir FCM token'ı oluşturulur ve sunucumuzda saklanır. Bu token yalnızca bildirim göndermek için kullanılır ve kişisel bilgilerinizle ilişkilendirilmez. Çıkış yaptığınızda token sunucudan silinir.</p>
+
+    <h3>e) Analitik ve Hata Raporları</h3>
     <ul>
         <li><strong>Firebase Analytics:</strong> Uygulama kullanım istatistikleri (açılan ekranlar, etkileşim süreleri) anonim olarak toplanır.</li>
         <li><strong>Firebase Crashlytics:</strong> Uygulama çökmesi durumunda cihaz bilgisi ve hata detayları otomatik olarak gönderilir.</li>
@@ -59,7 +62,7 @@
     <h2>3. Verilerin Paylaşımı</h2>
     <p>Verileriniz üçüncü taraflarla satılmaz veya pazarlama amacıyla paylaşılmaz. Aşağıdaki hizmet sağlayıcılar yalnızca uygulamanın çalışması için kullanılır:</p>
     <ul>
-        <li><strong>Firebase (Google):</strong> Kimlik doğrulama, analitik, hata raporlama</li>
+        <li><strong>Firebase (Google):</strong> Kimlik doğrulama, analitik, hata raporlama, push bildirimleri</li>
         <li><strong>MongoDB Atlas:</strong> Veritabanı barındırma</li>
         <li><strong>Cloudflare R2:</strong> Fotoğraf depolama</li>
         <li><strong>Railway:</strong> Sunucu barındırma</li>
@@ -84,7 +87,7 @@
 
     <div id="english">
         <h1>StatHub — Privacy Policy</h1>
-        <p class="subtitle">Last updated: April 4, 2026</p>
+        <p class="subtitle">Last updated: April 6, 2026</p>
 
         <p>StatHub is a mobile application designed for managing football teams and players. This privacy policy explains what data is collected and how it is used when you use the application.</p>
 
@@ -99,7 +102,10 @@
         <h3>c) Photos</h3>
         <p>Team crests and player photos are stored on Cloudflare R2 cloud storage. Photos are only displayed within the application.</p>
 
-        <h3>d) Analytics and Crash Reports</h3>
+        <h3>d) Push Notifications</h3>
+        <p>The app may send push notifications via Firebase Cloud Messaging (FCM). A device-specific FCM token is generated and stored on our server for this purpose. This token is used solely for sending notifications and is not linked to your personal information. The token is removed from the server when you log out.</p>
+
+        <h3>e) Analytics and Crash Reports</h3>
         <ul>
             <li><strong>Firebase Analytics:</strong> Anonymous usage statistics (screens viewed, interaction duration) are collected.</li>
             <li><strong>Firebase Crashlytics:</strong> In case of a crash, device information and error details are automatically sent.</li>
@@ -117,7 +123,7 @@
         <h2>3. Data Sharing</h2>
         <p>Your data is never sold or shared for marketing purposes. The following service providers are used solely for the operation of the app:</p>
         <ul>
-            <li><strong>Firebase (Google):</strong> Authentication, analytics, crash reporting</li>
+            <li><strong>Firebase (Google):</strong> Authentication, analytics, crash reporting, push notifications</li>
             <li><strong>MongoDB Atlas:</strong> Database hosting</li>
             <li><strong>Cloudflare R2:</strong> Photo storage</li>
             <li><strong>Railway:</strong> Server hosting</li>
